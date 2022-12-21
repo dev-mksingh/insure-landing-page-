@@ -10,7 +10,6 @@ html {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -32,7 +31,6 @@ a {
 
 header {
     height: 10vh;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +67,6 @@ header img {
 .modal {
     display: none;
     position: absolute;
-    /* border: 1px solid red; */
     width: 100%;
     height: 90vh;
     top: 10vh;
@@ -104,19 +101,26 @@ header img {
 
 .nav-bar ul li {
     font-weight: 700;
+    height: 30px;
 }
 
-ul button {
+.nav-bar ul button {
     width: 250px;
-    height: 50px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid grey;
 }
 
 .nav-bar a {
-    font-size: 30px;
-    color: white;
     display: block;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+}
+
+.nav-bar button a:hover {
+    background-color: white;
+    color: hsl(270, 9%, 17%);
 }
 
 /* landing */
@@ -130,7 +134,6 @@ ul button {
 }
 
 .landing img {
-    /* border: 1px solid red; */
     display: block;
     width: 100%;
     margin: auto;
@@ -266,7 +269,7 @@ hr {
     color: white;
 }
 
-button:hover {
+main button:hover {
     background-color: grey;
 }
 
@@ -344,14 +347,14 @@ h5 {
         align-items: center;
     }
 
-    .nav-bar ul li {
-        font-size: 16px;
+    .nav-bar ul button {
+        height: 30px;
     }
     
     .nav-bar a {
         font-size: 16px;
         color: grey;
-        display: block;
+        padding-top: 5px;
     }
 
     .desktop-profile {
